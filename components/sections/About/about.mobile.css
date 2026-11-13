@@ -1,0 +1,53 @@
+@media (max-width: 640px) {
+  #about {
+    background: var(--white);
+    color: var(--char);
+  }
+
+  .about__g {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  #about h2 {
+    color: var(--blue);
+  }
+
+  #about h2 span {
+    color: var(--red);
+  }
+
+  .about__body {
+    margin-top: 22px;
+    max-width: 560px;
+  }
+
+  .facts {
+    display: grid;
+    gap: 0;
+    border-top: 3px solid var(--char);
+    margin-top: 24px;
+  }
+
+  .facts div {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    border-bottom: 1px solid #c9c8c3;
+    padding: 12px 0;
+    font-weight: 600;
+  }
+
+  .facts b {
+    font: 800 2rem var(--font-display);
+    color: var(--red);
+    min-width: 60px;
+  }
+
+  .about__slot {
+    aspect-ratio: 16 / 10;
+    margin-top: 0;
+    background: linear-gradient(160deg, #cfcdc7, #a9a7a1);
+  }
+}

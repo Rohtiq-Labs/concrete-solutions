@@ -1,0 +1,39 @@
+@media (max-width: 640px) {
+  #outdoor {
+    background: linear-gradient(180deg, var(--blue) 0 62%, #20202a 62%);
+    overflow: hidden;
+  }
+
+  #outdoor h2 span {
+    color: var(--yel);
+  }
+
+  #outdoor ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 28px;
+  }
+
+  #outdoor li {
+    border: 1.5px solid var(--fg);
+    padding: 8px 12px;
+    font: 600 0.72rem var(--font-body);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  #outdoor p {
+    max-width: 560px;
+    margin-top: 22px;
+    color: #dfe3ec;
+  }
+
+  .os {
+    aspect-ratio: 16 / 9;
+    margin-top: 32px;
+    max-width: 100%;
+  }
+}

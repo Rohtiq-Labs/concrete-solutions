@@ -1,0 +1,33 @@
+@media (max-width: 640px) {
+  #why {
+    background: var(--white);
+    color: var(--char);
+  }
+
+  #why h2 {
+    color: var(--char);
+    max-width: 900px;
+  }
+
+  .wy {
+    margin-top: 36px;
+    border-top: 4px solid var(--red);
+  }
+
+  .wy div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 22px 0;
+    border-bottom: 1px solid #c9c8c3;
+  }
+
+  .wy h3 {
+    font-size: clamp(1.6rem, 8vw, 2.2rem);
+    color: var(--blue);
+  }
+
+  .wy p {
+    max-width: 520px;
+  }
+}

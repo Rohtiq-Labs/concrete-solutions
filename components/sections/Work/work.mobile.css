@@ -1,0 +1,50 @@
+@media (max-width: 640px) {
+  #work {
+    background: var(--char);
+    padding-bottom: 0;
+  }
+
+  .hs {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 36px 20px 56px;
+    scrollbar-color: var(--red) transparent;
+  }
+
+  .hs figure {
+    flex: 0 0 78vw;
+    scroll-snap-align: start;
+    margin: 0;
+  }
+
+  .hs figure:nth-child(even) {
+    margin-top: 28px;
+  }
+
+  .hs .slot {
+    height: clamp(240px, 45vh, 360px);
+  }
+
+  .hs figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 12px;
+    border-top: 3px solid var(--red);
+    margin-top: 12px;
+  }
+
+  .hs figcaption b {
+    font: 800 1.3rem / 1 var(--font-display);
+    text-transform: uppercase;
+  }
+
+  .hs figcaption span {
+    color: var(--grey);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+}

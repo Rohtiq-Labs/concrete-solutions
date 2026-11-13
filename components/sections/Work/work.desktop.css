@@ -1,0 +1,55 @@
+@media (min-width: 641px) {
+  #work {
+    background: var(--char);
+    padding-bottom: 0;
+  }
+
+  .hs {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 50px clamp(20px, 5vw, 72px) 80px;
+    scrollbar-color: var(--red) transparent;
+  }
+
+  .hs figure {
+    flex: 0 0 min(78vw, 560px);
+    scroll-snap-align: start;
+    margin: 0;
+  }
+
+  .hs figure:nth-child(even) {
+    margin-top: 60px;
+  }
+
+  .hs .slot {
+    height: clamp(300px, 50vh, 520px);
+    transition: filter 0.4s;
+  }
+
+  .hs figure:hover .slot {
+    filter: brightness(1.25);
+  }
+
+  .hs figcaption {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding-top: 14px;
+    border-top: 3px solid var(--red);
+    margin-top: 14px;
+  }
+
+  .hs figcaption b {
+    font: 800 1.7rem / 1 var(--font-display);
+    text-transform: uppercase;
+  }
+
+  .hs figcaption span {
+    color: var(--grey);
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+}

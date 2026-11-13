@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Concrete Solutions Group — Concrete Contractor in Denver, Colorado</title>
+<meta name="description" content="Residential and commercial concrete construction across Denver, Colorado: driveways, patios, pool decks, stamped and commercial concrete.">
+<meta property="og:title" content="Concrete Solutions Group — Denver, Colorado">
+<meta property="og:description" content="Concrete built. Solutions delivered.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Inter:wght@400;600&display=swap">
+<style>
+:root{--red:#D62828;--blue:#14305C;--white:#F7F6F3;--char:#18181A;--grey:#8D8D8A;--yel:#F2B705;--bg:#18181A;--fg:#F7F6F3;--soft:#B9B9B5;--line:rgba(247,246,243,.18);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#18181A;--fg:#F7F6F3}}
+:root[data-theme="dark"]{--bg:#18181A;--fg:#F7F6F3}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:400 17px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3,.d{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;font-weight:800;text-transform:uppercase;line-height:.92;letter-spacing:-.01em}
+h2{font-size:clamp(2.6rem,7vw,6rem)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--yel);outline-offset:3px}
+.wrap{padding:0 clamp(20px,5vw,72px)}
+section{position:relative;padding:clamp(72px,11vw,150px) 0}
+.tex{background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 9px),radial-gradient(circle at 30% 20%,rgba(255,255,255,.07),transparent 55%)}
+.btn{display:inline-block;font:800 1.05rem "Barlow Condensed",Impact,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:16px 30px;border:2px solid var(--red);background:var(--red);color:#fff;cursor:pointer;transition:transform .25s,background .25s;position:relative}
+.btn:hover{transform:translate(-4px,-4px);box-shadow:6px 6px 0 var(--yel)}
+.btn.ghost{background:transparent;border-color:var(--fg)}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .8s,transform .8s}
+.rv.on{opacity:1;transform:none}
+.eyebrow{font:600 .8rem Inter;letter-spacing:.25em;text-transform:uppercase;color:var(--yel);display:block;margin-bottom:18px}
+.slot{background:linear-gradient(160deg,#3b3b3d,#242426);position:relative;display:flex;align-items:flex-end;padding:16px;color:var(--grey);font:600 .72rem Inter;letter-spacing:.14em;text-transform:uppercase}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding-top:env(safe-area-inset-top,0px);background:rgba(24,24,26,.94);border-bottom:1px solid var(--line)}
+nav .in{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font:800 1.5rem/1 "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:10px}
+.logo i{width:26px;height:26px;background:var(--red);display:block;border-bottom:8px solid var(--blue);box-sizing:border-box}
+.links{display:flex;gap:28px;align-items:center;font:600 .78rem Inter;letter-spacing:.16em;text-transform:uppercase}
+.links a:not(.btn){position:relative;padding:6px 0}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:width .3s}
+.links a:not(.btn):hover::after{width:100%}
+.links .btn{padding:12px 20px;font-size:.9rem}
+.burger{display:none;background:none;border:2px solid var(--fg);color:var(--fg);padding:8px 14px;font:800 .9rem "Barlow Condensed";letter-spacing:.12em;cursor:pointer}
+@media(max-width:900px){.burger{display:block}.links{position:fixed;inset:calc(72px + env(safe-area-inset-top,0px)) 0 0 0;background:var(--char);flex-direction:column;align-items:flex-start;justify-content:center;gap:22px;padding:0 28px;font:800 2.6rem "Barlow Condensed";transform:translateX(100%);transition:transform .45s}
+.links.open{transform:none}.links .btn{font-size:1.2rem;padding:14px 22px}}
+/* hero */
+#hero{min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 60px;background:linear-gradient(180deg,rgba(24,24,26,.2),var(--bg) 96%),linear-gradient(120deg,var(--blue) 0 38%,#2b2b2d 38%)}
+#hero h1{font-size:clamp(3.6rem,14vw,12rem)}
+#hero h1 em{font-style:normal;color:var(--red);display:block}
+#hero p{max-width:520px;margin:28px 0;color:var(--soft)}
+.bar{position:absolute;right:0;top:0;width:clamp(30px,6vw,90px);height:58%;background:var(--red)}
+.bar::after{content:"";position:absolute;left:0;bottom:-18px;width:100%;height:18px;background:var(--yel)}
+.cta{display:flex;gap:16px;flex-wrap:wrap}
+/* about */
+#about{background:var(--white);color:var(--char)}
+#about .g{display:grid;grid-template-columns:7fr 5fr;gap:clamp(30px,6vw,90px);align-items:start}
+#about h2{color:var(--blue)}
+#about h2 span{color:var(--red)}
+.facts{display:grid;gap:0;border-top:3px solid var(--char);margin-top:30px}
+.facts div{display:flex;gap:16px;align-items:baseline;border-bottom:1px solid #c9c8c3;padding:14px 0;font-weight:600}
+.facts b{font:800 2.4rem "Barlow Condensed";color:var(--red);min-width:70px}
+#about .slot{aspect-ratio:4/5;margin-top:60px;background:linear-gradient(160deg,#cfcdc7,#a9a7a1)}
+@media(max-width:800px){#about .g{grid-template-columns:1fr}#about .slot{margin-top:0;aspect-ratio:16/10}}
+/* services */
+#services{background:var(--char)}
+.sv{display:flex;height:min(70vh,560px);margin-top:48px;border:1px solid var(--line)}
+.sv article{flex:1;border-right:1px solid var(--line);padding:26px 22px;position:relative;overflow:hidden;cursor:pointer;transition:flex .6s cubic-bezier(.7,0,.2,1),background .4s;display:flex;flex-direction:column;justify-content:space-between}
+.sv article:last-child{border:0}
+.sv .n{font:800 clamp(3rem,6vw,6rem)/1 "Barlow Condensed";color:transparent;-webkit-text-stroke:1.5px var(--soft)}
+.sv h3{font-size:clamp(1.6rem,2.6vw,2.6rem);writing-mode:vertical-rl;transform:rotate(180deg);transition:.4s}
+.sv p{max-width:340px;color:var(--soft);opacity:0;max-height:0;transition:opacity .5s .15s}
+.sv article:hover,.sv article:focus-within,.sv article.act{flex:4;background:var(--blue)}
+.sv article.act:nth-child(even),.sv article:nth-child(even):hover{background:var(--red)}
+.sv article:hover h3,.sv article.act h3{writing-mode:horizontal-tb;transform:none}
+.sv article:hover p,.sv article.act p{opacity:1;max-height:200px}
+.sv article:hover .n,.sv article.act .n{-webkit-text-stroke-color:#fff}
+@media(max-width:800px){.sv{flex-direction:column;height:auto}.sv article{flex:none;border-right:0;border-bottom:1px solid var(--line)}.sv h3{writing-mode:horizontal-tb;transform:none}.sv p{opacity:1;max-height:none;margin-top:8px}}
+/* outdoor */
+#outdoor{background:linear-gradient(100deg,var(--blue) 0 55%,#20202a 55%);overflow:hidden}
+#outdoor h2 span{color:var(--yel)}
+#outdoor ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;max-width:780px}
+#outdoor li{border:1.5px solid var(--fg);padding:8px 16px;font:600 .8rem Inter;letter-spacing:.14em;text-transform:uppercase}
+#outdoor p{max-width:560px;margin-top:26px;color:#dfe3ec}
+/* why */
+#why{background:var(--white);color:var(--char)}
+#why h2{color:var(--char);max-width:900px}
+.wy{margin-top:50px;border-top:4px solid var(--red)}
+.wy div{display:grid;grid-template-columns:1fr 2fr;gap:30px;padding:28px 0;border-bottom:1px solid #c9c8c3;align-items:baseline}
+.wy h3{font-size:clamp(1.8rem,3.4vw,3.2rem);color:var(--blue)}
+.wy p{max-width:520px}
+@media(max-width:700px){.wy div{grid-template-columns:1fr;gap:8px}}
+/* process */
+.tl{position:relative;margin-top:60px;padding-left:46px}
+.tl::before{content:"";position:absolute;left:14px;top:0;bottom:0;width:4px;background:linear-gradient(var(--red) var(--p,0%),var(--line) var(--p,0%))}
+.st{position:relative;padding:0 0 56px;max-width:640px}
+.st::before{content:"";position:absolute;left:-40px;top:10px;width:16px;height:16px;background:var(--bg);border:4px solid var(--red)}
+.st b{font:800 clamp(3rem,7vw,6rem)/.9 "Barlow Condensed";color:var(--red);display:block}
+.st h3{font-size:2rem;margin:6px 0}
+.st p{color:var(--soft)}
+/* showcase */
+#work{background:var(--char);padding-bottom:0}
+.hs{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:50px clamp(20px,5vw,72px) 80px;scrollbar-color:var(--red) transparent}
+.hs figure{flex:0 0 min(78vw,560px);scroll-snap-align:start;margin:0}
+.hs figure:nth-child(even){margin-top:60px}
+.hs .slot{height:clamp(300px,50vh,520px);transition:filter .4s}
+.hs figure:hover .slot{filter:brightness(1.25)}
+.hs figcaption{display:flex;justify-content:space-between;gap:14px;padding-top:14px;border-top:3px solid var(--red);margin-top:14px}
+.hs figcaption b{font:800 1.7rem/1 "Barlow Condensed";text-transform:uppercase}
+.hs figcaption span{color:var(--grey);font-size:.82rem;text-transform:uppercase;letter-spacing:.12em}
+/* video */
+#video{background:var(--blue);text-align:center}
+.pl{margin:48px auto 0;max-width:1100px;aspect-ratio:16/9;position:relative;display:grid;place-items:center;background:linear-gradient(135deg,#0d2040,#2b2b2d)}
+.pl button{width:104px;height:104px;border-radius:50%;border:3px solid #fff;background:var(--red);color:#fff;font-size:2rem;cursor:pointer;transition:transform .3s}
+.pl button:hover{transform:scale(1.12)}
+.pl p{position:absolute;bottom:16px;left:0;right:0;color:var(--soft);font-size:.85rem}
+/* finance + quote */
+#finance{background:var(--white);color:var(--char)}
+#finance h2{color:var(--blue)}
+#finance p{max-width:560px;margin:26px 0 32px}
+#cta{background:var(--red);text-align:center}
+#cta h2{font-size:clamp(3rem,10vw,9rem)}
+#cta p{max-width:560px;margin:26px auto 34px}
+#cta .btn{background:var(--blue);border-color:var(--blue)}
+#contact .g{display:grid;grid-template-columns:5fr 7fr;gap:clamp(30px,6vw,90px)}
+#contact dl{margin-top:30px}
+#contact dt{font:600 .75rem Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--yel);margin-top:20px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+label{font:600 .75rem Inter;letter-spacing:.16em;text-transform:uppercase;display:grid;gap:8px}
+.full{grid-column:1/-1}
+input,textarea{background:transparent;border:0;border-bottom:2px solid var(--grey);color:var(--fg);font:400 1rem Inter;padding:10px 0;border-radius:0;width:100%}
+input:focus,textarea:focus{outline:0;border-color:var(--red)}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:var(--yel)}
+.err{color:var(--yel);font-size:.78rem;letter-spacing:0;text-transform:none;min-height:1em}
+#fs{grid-column:1/-1;font-weight:600}
+@media(max-width:800px){#contact .g,form{grid-template-columns:1fr}}
+footer{background:#0f0f10;padding:70px 0 40px;border-top:6px solid var(--red)}
+footer .g{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:36px}
+footer h4{font:600 .75rem Inter;letter-spacing:.2em;text-transform:uppercase;color:var(--yel);margin-bottom:14px}
+footer li{list-style:none;margin:6px 0;color:var(--soft)}footer ul{padding:0}
+footer .big{font:800 clamp(3rem,12vw,11rem)/.85 "Barlow Condensed";text-transform:uppercase;color:transparent;-webkit-text-stroke:1.5px #3a3a3c;margin-top:50px}
+footer small{color:var(--grey);display:block;margin-top:24px}
+@media(max-width:800px){footer .g{grid-template-columns:1fr 1fr}}
+.sv article>*{position:relative;z-index:1}.sv .ph{position:absolute;inset:0;z-index:0;display:flex;align-items:flex-start;justify-content:flex-end;padding:14px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(0,0,0,.3));color:var(--soft);font:600 .68rem Inter;letter-spacing:.14em;text-transform:uppercase;text-align:right}.sv article:hover .ph,.sv article.act .ph{background:linear-gradient(160deg,rgba(255,255,255,.12),rgba(0,0,0,.45))}.hp{position:absolute;right:clamp(70px,11vw,170px);top:110px;width:min(32vw,400px);aspect-ratio:4/5;opacity:.9}.os{aspect-ratio:21/9;margin-top:44px;max-width:900px}@media(max-width:800px){.hp{display:none}}@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav aria-label="Primary"><div class="wrap in">
+<a class="logo" href="#hero" aria-label="Concrete Solutions Group home"><i></i>Concrete Solutions</a><!-- TODO: replace with supplied logo file -->
+<button class="burger" aria-expanded="false" aria-controls="lk">Menu</button>
+<div class="links" id="lk"><a href="#hero">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#work">Gallery</a><a href="#finance">Financing</a><a href="#contact">Contact Us</a><a class="btn" href="#contact">Get a Free Quote</a></div>
+</div></nav>
+
+<main>
+<section id="hero" class="tex"><div class="bar"></div><div class="slot hp" aria-hidden="true">Hero photo / video slot · full-bleed in final</div><div class="wrap">
+<span class="eyebrow">Denver, Colorado</span>
+<h1>Concrete built.<em>Solutions delivered.</em></h1>
+<p>Residential and commercial concrete construction across Denver, Colorado. Built on experience, craftsmanship, and a commitment to getting it right.</p>
+<div class="cta"><a class="btn" href="#contact">Get a Free Quote</a><a class="btn ghost" href="#work">Explore Our Work</a></div>
+</div><!-- TODO: full-bleed hero photo/video; 10,000+ projects claim only after verification --></section>
+
+<section id="about"><div class="wrap g">
+<div class="rv"><span class="eyebrow" style="color:var(--red)">About Concrete Solutions</span>
+<h2>We’re in the people business. <span>Not just the concrete business.</span></h2>
+<p style="margin-top:28px;max-width:560px">At Concrete Solutions, we pride ourselves on delivering top-notch concrete construction services throughout Denver, Colorado. We specialize in residential and commercial projects, combining quality materials, experienced craftsmanship, and customer-focused service.</p>
+<div class="facts"><div><b>12</b>Years of experience <!-- verify before publishing --></div><div><b>R/C</b>Residential &amp; commercial expertise</div><div><b>01</b>Quality-driven construction</div><div><b>360</b>Customer-focused approach</div></div></div>
+<div class="slot rv" role="img" aria-label="Concrete Solutions crew on site">Team photo slot</div>
+</div></section>
+
+<section id="services"><div class="wrap">
+<span class="eyebrow">The Solutions</span><h2 class="rv">Five ways we pour it right.</h2>
+<div class="sv rv">
+<article tabindex="0"><span class="ph">Photo slot · Driveways</span><span class="n">01</span><div><h3>Concrete Driveways</h3><p>Durable, expertly constructed driveways designed to enhance curb appeal and withstand everyday use.</p></div></article>
+<article tabindex="0"><span class="ph">Photo slot · Pool decks</span><span class="n">02</span><div><h3>Pool Decks</h3><p>Beautiful, durable and slip-resistant poolside surfaces designed for comfort, safety, and longevity.</p></div></article>
+<article tabindex="0"><span class="ph">Photo slot · Patios</span><span class="n">03</span><div><h3>Patios</h3><p>Functional outdoor concrete spaces designed for relaxing, entertaining, and everyday living.</p></div></article>
+<article tabindex="0"><span class="ph">Photo slot · Stamped concrete</span><span class="n">04</span><div><h3>Stamped Concrete</h3><p>Decorative concrete finishes that recreate the character of stone, brick, and slate.</p></div></article>
+<article tabindex="0"><span class="ph">Photo slot · Commercial</span><span class="n">05</span><div><h3>Commercial Concrete</h3><p>Reliable concrete installations for commercial flooring, parking areas, walkways, and larger developments.</p></div></article>
+</div></div></section>
+
+<section id="outdoor"><div class="wrap">
+<span class="eyebrow">Outdoor Living Solutions</span>
+<h2 class="rv">More than concrete. <span>A complete outdoor solution.</span></h2>
+<p>Through our partnership with our sister company <!-- confirm official name --> and in-house project coordination, one team can take your whole outdoor space from slab to finish.</p>
+<ul><li>Concrete Patios</li><li>Sod &amp; Artificial Turf</li><li>Sprinkler Systems</li><li>Putting Greens</li><li>Pavers &amp; Hardscapes</li><li>Masonry Work</li><li>Fire Pits</li><li>Water Features</li></ul>
+<div class="slot os" role="img" aria-label="Outdoor living photo placeholder">Outdoor living photo slot</div>
+</div></section>
+
+<section id="why"><div class="wrap">
+<h2 class="rv">Concrete construction. Done right.</h2>
+<div class="wy rv">
+<div><h3>Experienced concrete team</h3><p>Skilled professionals with experience across residential and commercial projects.</p></div>
+<div><h3>Quality materials</h3><p>High-quality materials and construction techniques focused on durability.</p></div>
+<div><h3>Fully insured</h3><p>Professional project execution with insurance coverage.</p></div>
+<div><h3>Customer-focused service</h3><p>Communication and collaboration throughout the project.</p></div>
+</div></div></section>
+
+<section id="process"><div class="wrap">
+<span class="eyebrow">Our Process</span><h2>From first call to final finish.</h2>
+<div class="tl" id="tl">
+<div class="st rv"><b>01</b><h3>Consultation</h3><p>Understanding the client’s requirements, preferences, and project goals.</p></div>
+<div class="st rv"><b>02</b><h3>Smart Project Design</h3><p>Planning the right concrete solution around aesthetics, functionality, and budget.</p></div>
+<div class="st rv"><b>03</b><h3>Site Preparation</h3><p>Evaluating access, grading, drainage, and base preparation.</p></div>
+<div class="st rv"><b>04</b><h3>Concrete Installation</h3><p>Professional installation with attention to quality and precision.</p></div>
+<div class="st rv"><b>05</b><h3>Inspection &amp; Approval</h3><p>Reviewing the completed work and ensuring it meets project expectations.</p></div>
+<div class="st rv"><b>06</b><h3>Project Completion</h3><p>Delivering the finished project and ensuring client satisfaction.</p></div>
+</div></div></section>
+
+<section id="work"><div class="wrap"><span class="eyebrow">Project Showcase</span><h2>Built project by project.</h2></div>
+<div class="hs" tabindex="0" aria-label="Project gallery, scroll horizontally">
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Residential Driveways</b><span>Denver, CO</span></figcaption></figure>
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Custom Patios</b><span>Denver, CO</span></figcaption></figure>
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Pool Decks</b><span>Denver, CO</span></figcaption></figure>
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Stamped Concrete</b><span>Denver, CO</span></figcaption></figure>
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Commercial Concrete</b><span>Denver, CO</span></figcaption></figure>
+<figure><div class="slot tex">Project photo slot</div><figcaption><b>Custom Concrete Work</b><span>Denver, CO</span></figcaption></figure>
+</div></section>
+
+<section id="video"><div class="wrap"><span class="eyebrow">Project Film</span><h2>See the work. See the difference.</h2>
+<div class="pl" id="pl"><button id="play" aria-label="Play project video">&#9654;</button><p id="pn">Project film to be supplied</p></div></div></section>
+
+<section id="finance"><div class="wrap">
+<span class="eyebrow" style="color:var(--red)">Financing</span>
+<h2 class="rv">The right project. A more flexible way to pay.</h2>
+<p>Financing options are available to help you move forward with your project. Reach out and we’ll walk you through what’s available.</p>
+<a class="btn" href="#contact">Explore Financing</a>
+</div></section>
+
+<section id="cta" class="tex"><div class="wrap"><h2 class="rv">Let’s build your next project.</h2>
+<p>From concrete driveways and patios to commercial installations, Concrete Solutions is ready to help bring your vision to life.</p>
+<a class="btn" href="#contact">Request a Free Quote</a></div></section>
+
+<section id="contact"><div class="wrap g">
+<div><span class="eyebrow">Contact</span><h2>Get your free quote.</h2>
+<dl><dt>Email</dt><dd><a href="mailto:info@concretesolutionsdenver.com">info@concretesolutionsdenver.com</a></dd><dt>Phone</dt><dd><a href="tel:+17205946823">720-594-6823</a></dd><dt>Location</dt><dd>Denver, Colorado</dd></dl></div>
+<form id="f" novalidate>
+<label>Name*<input name="Name" required autocomplete="name"><span class="err"></span></label>
+<label>Phone*<input name="Phone" type="tel" required autocomplete="tel"><span class="err"></span></label>
+<label>Email*<input name="Email" type="email" required autocomplete="email"><span class="err"></span></label>
+<label>Address*<input name="Address" required autocomplete="street-address"><span class="err"></span></label>
+<label class="full">Project details*<textarea name="Project details" rows="4" required></textarea><span class="err"></span></label>
+<label class="full">Desired project start date*<input name="Start date" type="date" required><span class="err"></span></label>
+<button class="btn full" id="sb" type="submit">Send now</button>
+<p id="fs" role="status" aria-live="polite"></p>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="g"><div><a class="logo" href="#hero"><i></i>Concrete Solutions</a><p style="margin-top:16px;color:var(--soft);max-width:340px">Residential and commercial concrete construction across Denver, Colorado.</p></div>
+<div><h4>Navigate</h4><ul><li><a href="#about">About Us</a></li><li><a href="#work">Gallery</a></li><li><a href="#finance">Financing</a></li><li><a href="#contact">Contact Us</a></li></ul></div>
+<div><h4>Services</h4><ul><li><a href="#services">Driveways</a></li><li><a href="#services">Pool Decks</a></li><li><a href="#services">Patios</a></li><li><a href="#services">Stamped</a></li><li><a href="#services">Commercial</a></li></ul></div>
+<div><h4>Contact</h4><ul><li>720-594-6823</li><li>info@concretesolutionsdenver.com</li><li>Denver, Colorado</li><li><!-- TODO: add real social URLs -->Social links: to be supplied</li></ul></div></div>
+<div class="big" aria-hidden="true">Built on solutions</div>
+<small>© <span id="y">2026</span> Concrete Solutions Group. All rights reserved.</small>
+</div></footer>
+
+<script>
+(function(){
+var b=document.querySelector('.burger'),l=document.getElementById('lk');
+b.onclick=function(){var o=l.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');b.setAttribute('aria-expanded',false)}});
+var io=new IntersectionObserver(function(a){a.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var tl=document.getElementById('tl');
+function pr(){var r=tl.getBoundingClientRect(),p=(innerHeight*.6-r.top)/r.height*100;tl.style.setProperty('--p',Math.max(0,Math.min(100,p))+'%')}
+addEventListener('scroll',pr,{passive:true});pr();
+document.querySelectorAll('.sv article').forEach(function(a){a.addEventListener('click',function(){document.querySelectorAll('.sv article').forEach(function(x){x.classList.remove('act')});a.classList.add('act')})});
+document.getElementById('play').onclick=function(){document.getElementById('pn').textContent='No video file has been added yet.'};
+var f=document.getElementById('f'),s=document.getElementById('fs'),sb=document.getElementById('sb');
+f.addEventListener('submit',function(e){
+e.preventDefault();var ok=true,body=[];
+f.querySelectorAll('input,textarea').forEach(function(i){
+var m=i.parentNode.querySelector('.err'),v=i.value.trim(),bad=!v||(i.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v))||(i.type==='tel'&&v.replace(/\D/g,'').length<7);
+i.setAttribute('aria-invalid',bad);m.textContent=bad?'Please enter a valid '+i.name.toLowerCase()+'.':'';
+if(bad)ok=false;body.push(i.name+': '+v)});
+if(!ok){s.textContent='Please fix the highlighted fields.';return}
+sb.disabled=true;sb.textContent='Sending…';
+setTimeout(function(){
+location.href='mailto:info@concretesolutionsdenver.com?subject='+encodeURIComponent('Free quote request')+'&body='+encodeURIComponent(body.join('\n'));
+sb.disabled=false;sb.textContent='Send now';
+s.textContent='Your email app should now open with your request ready to send. If it doesn’t, call 720-594-6823.';
+},400)});
+})();
+</script>
+</body>
+</html>

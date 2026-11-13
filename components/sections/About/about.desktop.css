@@ -1,0 +1,54 @@
+@media (min-width: 641px) {
+  #about {
+    background: var(--white);
+    color: var(--char);
+  }
+
+  .about__g {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    gap: clamp(30px, 6vw, 90px);
+    align-items: start;
+  }
+
+  #about h2 {
+    color: var(--blue);
+  }
+
+  #about h2 span {
+    color: var(--red);
+  }
+
+  .about__body {
+    margin-top: 28px;
+    max-width: 560px;
+  }
+
+  .facts {
+    display: grid;
+    gap: 0;
+    border-top: 3px solid var(--char);
+    margin-top: 30px;
+  }
+
+  .facts div {
+    display: flex;
+    gap: 16px;
+    align-items: baseline;
+    border-bottom: 1px solid #c9c8c3;
+    padding: 14px 0;
+    font-weight: 600;
+  }
+
+  .facts b {
+    font: 800 2.4rem var(--font-display);
+    color: var(--red);
+    min-width: 70px;
+  }
+
+  .about__slot {
+    aspect-ratio: 4 / 5;
+    margin-top: 60px;
+    background: linear-gradient(160deg, #cfcdc7, #a9a7a1);
+  }
+}

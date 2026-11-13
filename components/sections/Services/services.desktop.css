@@ -1,0 +1,125 @@
+@media (min-width: 641px) {
+  #services {
+    background: var(--char);
+  }
+
+  .sv {
+    display: flex;
+    height: min(70vh, 560px);
+    margin-top: 48px;
+    border: 1px solid var(--line);
+  }
+
+  .sv article {
+    flex: 1;
+    border-right: 1px solid var(--line);
+    padding: 26px 22px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+      flex 0.6s cubic-bezier(0.7, 0, 0.2, 1),
+      background 0.4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sv article:last-child {
+    border: 0;
+  }
+
+  .sv .n {
+    font: 800 clamp(3rem, 6vw, 6rem) / 1 var(--font-display);
+    color: transparent;
+    -webkit-text-stroke: 1.5px var(--soft);
+  }
+
+  .sv h3 {
+    font-size: clamp(1.6rem, 2.6vw, 2.6rem);
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    transition: 0.4s;
+  }
+
+  .sv p {
+    max-width: 340px;
+    color: var(--soft);
+    opacity: 0;
+    max-height: 0;
+    transition: opacity 0.5s 0.15s;
+  }
+
+  .sv article:hover,
+  .sv article:focus-within,
+  .sv article.act {
+    flex: 4;
+    background: var(--blue);
+  }
+
+  .sv article.act:nth-child(even),
+  .sv article:nth-child(even):hover {
+    background: var(--red);
+  }
+
+  .sv article:hover h3,
+  .sv article.act h3 {
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .sv article:hover p,
+  .sv article.act p {
+    opacity: 1;
+    max-height: 200px;
+  }
+
+  .sv article:hover .n,
+  .sv article.act .n {
+    -webkit-text-stroke-color: #fff;
+  }
+
+  .sv article > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .sv .ph {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .sv .ph img {
+    object-fit: cover;
+    opacity: 0.35;
+    transition: opacity 0.4s, transform 0.6s;
+  }
+
+  .sv .ph::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      160deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.55)
+    );
+  }
+
+  .sv article:hover .ph img,
+  .sv article.act .ph img {
+    opacity: 0.55;
+    transform: scale(1.04);
+  }
+
+  .sv article:hover .ph::after,
+  .sv article.act .ph::after {
+    background: linear-gradient(
+      160deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.65)
+    );
+  }
+}

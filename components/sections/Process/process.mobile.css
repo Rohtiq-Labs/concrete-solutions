@@ -1,0 +1,49 @@
+@media (max-width: 640px) {
+  .tl {
+    position: relative;
+    margin-top: 40px;
+    padding-left: 36px;
+  }
+
+  .tl::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(var(--red) var(--p, 0%), var(--line) var(--p, 0%));
+  }
+
+  .st {
+    position: relative;
+    padding: 0 0 40px;
+    max-width: 640px;
+  }
+
+  .st::before {
+    content: "";
+    position: absolute;
+    left: -32px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    background: var(--bg);
+    border: 3px solid var(--red);
+  }
+
+  .st b {
+    font: 800 clamp(2.4rem, 12vw, 3.6rem) / 0.9 var(--font-display);
+    color: var(--red);
+    display: block;
+  }
+
+  .st h3 {
+    font-size: 1.6rem;
+    margin: 6px 0;
+  }
+
+  .st p {
+    color: var(--soft);
+  }
+}
